@@ -1,0 +1,45 @@
+extends base.pug
+block scripts
+  script(src='index.js')
+block style 
+   style
+    include style.css
+block content
+   
+        section#introSection
+            div  Welcome to shashank dance academy 
+            div  Eat sleep dance Repeat 
+        section#sponsorsSection
+            h2  Our  Sponsors
+            div#sponsors 
+                img(src="/static/g.jpg" ,alt="Sponsor Image",class="spImage")
+                img(src="/static/f.jpg" ,alt="Sponsor Image",class="spImage")
+                img(src="/static/e.jpg" ,alt="Sponsor Image",class="spImage")
+                img(src="/static/c.jpg" ,alt="Sponsor Image",class="spImage")
+        
+        section#missionSection 
+            h2  Our Mission
+            div.card 
+                h3 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/ka.jpg")
+                    div.card-content 
+                        p This is the best dance academy of the Greater Noida.
+            div.card 
+                h3 Dance the way you like 
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/sa.jpg")
+                    div.card-content 
+                        p This is the best dance academy of the Greater Noida.
+            div.card 
+                h3 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/ja.jpg")
+                    div.card-content 
+                        p This is the best dance academy of the Greater Noida.
+        
+        script 
+            include index.js
